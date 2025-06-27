@@ -1,0 +1,234 @@
+  /* General Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  /* Table Container */
+  .table-container {
+    margin: 20px auto;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .table-container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Scrollable Table Wrapper */
+  .table-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 14px;
+    min-width: 1200px; /* Ensures proper alignment for long-width tables */
+  }
+  
+  /* Table Header */
+  thead th {
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #4d4d4d;
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+  
+  /* Table Rows */
+  tbody tr {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  tbody tr:hover {
+    background-color: #d0d4ff;
+    transform: scale(1.01);
+  }
+  
+  
+  tbody tr td {
+    border: 1px solid #a1a1a1;
+}
+  /* Table Cells */
+  th, td {
+    padding: 14px;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  
+  /* Expandable Rows */
+  .expandable-row {
+    background-color: #f3f6fa;
+    display: none;
+  }
+  
+  .expandable-content {
+    padding: 15px;
+    background-color: #e6ebff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  /* Buttons */
+  .actions .btn {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #5146ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .actions .btn:hover {
+    background-color:rgb(134, 130, 255);
+    transform: translateY(-2px);
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    max-width: 450px;
+    height: 45px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 2px solid #ddd;
+    /* border-radius: 30px; */
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+  
+  .search-bar input:focus {
+    border-color:#ff4646;
+    box-shadow: 0 4px 12px rgba(21, 255, 161, 0.4);
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    th, td {
+        font-size: 12px;
+        padding: 10px;
+    }
+  
+    .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+  
+    .search-bar input {
+        width: 90%;
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+        font-size: 10px;
+        padding: 8px;
+    }
+  
+    .btn {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+  
+    .search-bar input {
+        font-size: 12px;
+    }
+  }
+  .copy-btn {
+    padding: 10px 14px;
+    background-color: #000825;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 10px;
+}
+
+  .copy-btn:hover {
+    background-color:  #2943a0;
+  
+  }
+  .status{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 5px;
+    justify-content: start;
+    gap: 20px;
+  }
+  .status > span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+  }
+  .status > span > label {
+    font-size: 15px;
+    font-weight: 600;
+    color:#ff4646;
+  }
+  .status > span > input {
+    height: 10px;
+    fill: #ff4646;
+  
+  }
+  .btn-danger{
+    background-color: red;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom:8px;
+  }
+  .btn-update{
+    background-color: rgb(13, 49, 0);
+    padding: 5px 15px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom:8px;
+  }
